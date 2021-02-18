@@ -45,4 +45,4 @@ jobs:
         # start args: # optional
   
     - name: Test
-      run: go test -v test/...
+      run: go test -v ./test/go_kubernetes_test.go
