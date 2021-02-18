@@ -30,7 +30,7 @@ jobs:
         # Version of Minikube to deploy
         minikube version: v1.17.0
         # Version of Kubernetes to deploy
-        kubernetes version: v1.20
+        kubernetes version: v1.20.0
         # GITHUB_TOKEN to be able to perform requests to GH REST API (with no limit)
         # github token: # optional
         # 
