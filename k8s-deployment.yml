@@ -41,7 +41,7 @@ kind: Service                    # Type of kubernetes resource
 metadata:
   name: go-hello-world-service   # Name of the resource
 spec:
-  type: NodePort                 # A port is opened on each node in your cluster via Kube proxy.
+  type: LoadBalancer             # A port is opened on each node in your cluster via Kube tunnel.
   ports:                         # Take incoming HTTP requests on port 9090 and forward them to the targetPort of 8080
   - name: http
     port: 9090
