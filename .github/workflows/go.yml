@@ -43,6 +43,8 @@ jobs:
         # driver: # optional
           # 
         # start args: # optional
+    - name: debug actions
+      run: ls -lah
   
     - name: Test
       run: go test -v ./test/go_kubernetes_test.go
