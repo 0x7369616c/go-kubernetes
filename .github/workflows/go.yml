@@ -21,10 +21,11 @@ jobs:
     - name: Build
       run: go build -v ./...
       
-    - name: setup-minikube
+      
+    - name: Setup Minikube Kubernetes Cluster
       # You may pin to the exact commit or the version.
-      # uses: medyagh/setup-minikube@a0ab775a4af7d24372156e17cfed0defe305f716
-      uses: medyagh/setup-minikube@v0.0.2
-    
+      # uses: manusa/actions-setup-minikube@5118549e6b5b7a08d24c8f3d382d77a5c707746f
+      uses: manusa/actions-setup-minikube@v2.3.0
+  
     - name: Test
       run: go test -v ./...
