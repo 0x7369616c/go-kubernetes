@@ -26,6 +26,17 @@ jobs:
       # You may pin to the exact commit or the version.
       # uses: manusa/actions-setup-minikube@5118549e6b5b7a08d24c8f3d382d77a5c707746f
       uses: manusa/actions-setup-minikube@v2.3.0
+      with:
+        # Version of Minikube to deploy
+        minikube version: v1.17.0
+        # Version of Kubernetes to deploy
+        kubernetes version: v1.20
+        # GITHUB_TOKEN to be able to perform requests to GH REST API (with no limit)
+        # github token: # optional
+        # 
+        # driver: # optional
+          # 
+        # start args: # optional
   
     - name: Test
       run: go test -v ./...
